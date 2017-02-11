@@ -122,11 +122,28 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                     return colors(d.type);
                 });
 
+            var overlay = d3.select('#overlay')
+                .on('click', function () {
+                    overlay.attr('style', null);
+                });
+
+            svg.selectAll('.project')
+                .on('click', function (e) {
+                    var content = '<h2>' + e.title + '</h2><p>' + e.description + '</p><p>' + e.contact + '</p>' +
+                            '<p>' + e.event + '</p>' +
+                            '<p>' + e.date + '</p>' +
+                            '<p>' + e.category + '</p>' +
+                            '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>';
+                    overlay
+                        .attr("style", "display: block")
+                        .select('div').html(content)
+                });
+
             node.append('foreignObject')
                 .attr("x", -50)
                 .attr("y", -10)
                 .attr("width", 100)
-                .attr("height", 100)
+                .attr("height", 50)
                 .append('xhtml:body')
                 .append('div')
                 .attr("style", function (d) {

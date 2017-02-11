@@ -20,7 +20,11 @@ div {
 .project div {
   background-color: white;
   border-width: 1px;
-  border-style: solid; }
+  border-style: solid;
+  cursor: pointer; }
+
+svg div {
+  height: auto; }
 
 circle {
   stroke: #555;
@@ -28,5 +32,22 @@ circle {
 
 line {
   stroke-width: 2; }
+
+#overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+  #overlay div {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    padding: 20px 50px;
+    margin: 5em auto;
+    text-align: left;
+    line-height: 1.35em;
+    font-size: 1.2em; }
 
 /*# sourceMappingURL=styles.css.map */
