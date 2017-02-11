@@ -46,7 +46,8 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                 data.nodes.push({
                     "id": data.nodes.length,
                     "class": "source",
-                    "title": d
+                    "title": d,
+                    "users": 0
                 })
             });
 
@@ -62,7 +63,8 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                             source: d.id,
                             target: sourceIds[s],
                             value: 1
-                        })
+                        });
+                        data.nodes[sourceIds[s]].users++
                     })
                 }
             });
@@ -73,7 +75,10 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
 
             simulation
                 .force('link')
-                .links(data.links);
+                .links(data.links)
+                .distance(function (d) {
+                    return 10 * ((d.source.sources ? d.source.sources.length : 1) + d.target.users);
+                });
 
             var node = view.selectAll('.node')
                 .data(data.nodes)
