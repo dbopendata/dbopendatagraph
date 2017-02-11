@@ -67,6 +67,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                         data.nodes[sourceIds[s]].connections++;
                     });
                     data.nodes[d.id - 1].connections = d.sources.length;
+                    data.nodes[d.id - 1].class = 'project';
                 }
             });
 
@@ -81,21 +82,33 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                     return 10 * (d.source.connections + d.target.connections);
                 });
 
+            var link = view.append('g')
+                .attr('class', 'links')
+                .selectAll('line')
+                .data(data.links)
+                .enter().append('line')
+                .attr('stroke', function (d) {
+                    return colors(d.source.type);
+                });
+
             var node = view.selectAll('.node')
                 .data(data.nodes)
                 .enter().append('g')
-                .attr('class', 'node')
+                .attr('class', function (d) {
+                    return d.class;
+                })
                 .call(d3.drag()
                     .on('start', beginDrag)
                     .on('drag', drag)
                     .on('end', endDrag)
             );
 
-            node.append('circle')
+            svg.selectAll('.source')
+                .append('circle')
                 .attr('r', function (d) {
                     return 10 + 2 * d.connections;
                 })
-                .attr('fill', function(d) { return colors(d.type); });
+                .attr('fill', '#48c');
 
             node.append('foreignObject')
                 .attr("x", -50)
@@ -105,12 +118,6 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                 .append('xhtml:body')
                 .append('div')
                 .text(function(d) { return d.title; });
-
-            var link = view.append('g')
-                .attr('class', 'links')
-                .selectAll('line')
-                .data(data.links)
-                .enter().append('line');
 
             function tick() {
                 link
