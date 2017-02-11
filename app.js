@@ -79,7 +79,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                 .force('link')
                 .links(data.links)
                 .distance(function (d) {
-                    return 10 * (d.source.connections + d.target.connections);
+                    return 20 + 10 * (d.source.connections + d.target.connections);
                 });
 
             var link = view.append('g')
@@ -106,7 +106,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
             svg.selectAll('.source')
                 .append('circle')
                 .attr('r', function (d) {
-                    return 10 + 2 * d.connections;
+                    return 20 + 3 * d.connections;
                 })
                 .attr('fill', '#48c');
 
@@ -119,6 +119,11 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                 .attr("height", 100)
                 .append('xhtml:body')
                 .append('div')
+                .attr("style", function (d) {
+                    if (d.class === 'project') {
+                        return "border-color: " + colors(d.type);
+                    }
+                })
                 .text(function(d) { return d.title; });
 
             function tick() {
