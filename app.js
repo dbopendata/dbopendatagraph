@@ -133,7 +133,8 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                             '<p>' + e.event + '</p>' +
                             '<p>' + e.date + '</p>' +
                             '<p>' + e.category + '</p>' +
-                            '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>';
+                            '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>' +
+                            '<button>Schließen</button>';
                     overlay
                         .attr("style", "display: block")
                         .select('div').html(content)

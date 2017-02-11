@@ -41,6 +41,22 @@ line {
   stroke-width: 2;
 }
 
+button {
+  float: right;
+  border: 2px solid #f01414;
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  &:active {
+    background-color: #aaa;
+  }
+}
+
 #overlay {
   display: none;
   position: absolute;
