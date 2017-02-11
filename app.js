@@ -11,7 +11,7 @@ requirejs.config({
     }
 });
 
-requirejs(["node_modules/d3/build/d3.min"], function(d3) {
+requirejs(['node_modules/d3/build/d3.min'], function(d3) {
     var width = window.innerWidth;
     var height = window.innerHeight;
 
@@ -19,68 +19,67 @@ requirejs(["node_modules/d3/build/d3.min"], function(d3) {
         .scaleExtent([0.1, 4])
         .translateExtent([[-100, -100], [width + 90, height + 100]]);
 
-    var svg = d3.select("body").append("svg:svg")
-        .attr("width", width)
-        .attr("height", height)
-        .call(zoom.on("zoom", function () {
-            view.attr("transform", d3.event.transform);
+    var svg = d3.select('body').append('svg:svg')
+        .attr('width', width)
+        .attr('height', height)
+        .call(zoom.on('zoom', function () {
+            view.attr('transform', d3.event.transform);
         }));
 
-    var view = svg.append("g");
+    var view = svg.append('g');
 
     var colors = d3.scaleOrdinal(d3.schemeCategory20);
 
     var simulation = d3.forceSimulation()
-        .force("link", d3.forceLink().id(function(d) { return d.id; }))
-        .force("charge", d3.forceManyBody())
-        .force("center", d3.forceCenter(width / 2, height / 2));
+        .force('link', d3.forceLink().id(function(d) { return d.id; }))
+        .force('charge', d3.forceManyBody())
+        .force('center', d3.forceCenter(width / 2, height / 2));
 
-    d3.json("data/projects.json", function(error, data) {
+    d3.json('data/projects.json', function(error, data) {
         if (error) throw error;
 
         simulation
             .nodes(data.nodes)
-            .on("tick", tick);
+            .on('tick', tick);
 
         simulation
-            .force("link")
+            .force('link')
             .links(data.links);
 
-        var node = view.selectAll(".node")
+        var node = view.selectAll('.node')
             .data(data.nodes)
-            .enter().append("g")
-            .attr("class", "node")
+            .enter().append('g')
+            .attr('class', 'node')
             .call(d3.drag()
-                .on("start", beginDrag)
-                .on("drag", drag)
-                .on("end", endDrag)
+                .on('start', beginDrag)
+                .on('drag', drag)
+                .on('end', endDrag)
             );
 
-        node.append("circle")
-            .attr("r", 20)
-            .attr("fill", function(d) { return colors(d.group); });
+        node.append('circle')
+            .attr('r', 20)
+            .attr('fill', function(d) { return colors(d.type); });
 
-        node.append("text")
-            .attr("dx", 0)
-            .attr("dy", "2em")
+        node.append('text')
+            .attr('dx', 0)
+            .attr('dy', '2em')
             .text(function(d) { return d.title; });
 
-        var link = view.append("g")
-            .attr("class", "links")
-            .selectAll("rel")
+        var link = view.append('g')
+            .attr('class', 'links')
+            .selectAll('line')
             .data(data.links)
-            .enter().append("rel")
-            .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+            .enter().append('line');
 
         function tick() {
             link
-                .attr("x1", function(d) { return d.source.x; })
-                .attr("y1", function(d) { return d.source.y; })
-                .attr("x2", function(d) { return d.target.x; })
-                .attr("y2", function(d) { return d.target.y; });
+                .attr('x1', function(d) { return d.source.x; })
+                .attr('y1', function(d) { return d.source.y; })
+                .attr('x2', function(d) { return d.target.x; })
+                .attr('y2', function(d) { return d.target.y; });
 
-            node.attr("transform", function(d) {
-                return "translate(" + d.x + "," + d.y + ")";
+            node.attr('transform', function(d) {
+                return 'translate(' + d.x + ',' + d.y + ')';
             });
         }
     });
