@@ -7,7 +7,7 @@
       "contact": "Dale Schultz remotesign@mixmox.com",
       "event": "",
       "date": "",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "http://modeltrain.servehttp.com/remotesign.nsf"
@@ -19,7 +19,7 @@
       "contact": "Marcel Büsing https://github.com/marcelbuesing",
       "event": "",
       "date": "April 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/muhbaasu/haskell-db-fahrplan-cli"
@@ -31,7 +31,7 @@
       "contact": "Yannick Schuhmann yannick@yannickschuchmann.com https://github.com/yannickschuchmann",
       "event": "",
       "date": "Mai 2016",
-      "usedData": "Parkplätze API (Beta)",
+      "sources": "Parkplätze API (Beta)",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/yannickschuchmann/dbopendata-parkingareas"
@@ -43,7 +43,7 @@
       "contact": "Team Lokvorschau \nhttp://www.drehscheibe-online.de/foren/read.php?2,7749471",
       "event": "",
       "date": "März 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Api-Nutzung",
       "category": "Projekte mit Daten",
       "link": "http://www.drehscheibe-online.de/ds_sifo/ds_live.php"
@@ -55,7 +55,7 @@
       "contact": "Christoph Radtke\nds100@christoph-radtke.de",
       "event": "",
       "date": "Dezember 2016",
-      "usedData": "Das verwendete Betriebsstellenverzeichnis ist eine Zusammenführung der 4 Rubriken \"Haltestellen\", \"Betriebsstellen\", \"Stationsdaten\" und \"Stationsdaten Regio\" vom Open-Data-Portal der Deutschen Bahn AG.",
+      "sources": "Das verwendete Betriebsstellenverzeichnis ist eine Zusammenführung der 4 Rubriken \"Haltestellen\", \"Betriebsstellen\", \"Stationsdaten\" und \"Stationsdaten Regio\" vom Open-Data-Portal der Deutschen Bahn AG.",
       "type": "APP",
       "category": "Projekte mit Daten",
       "link": "https://play.google.com/store/apps/details?id=net.syssel.ds100"
@@ -67,7 +67,7 @@
       "contact": "Jakob Reiter\nhttp://jakobreiter.de/",
       "event": "",
       "date": "September 2016",
-      "usedData": "Fahrplan API, Wagenstandsanzeiger, Stationsdaten",
+      "sources": "Fahrplan API, Wagenstandsanzeiger, Stationsdaten",
       "type": "APP",
       "category": "Projekte mit Daten",
       "link": "https://itunes.apple.com/us/app/meinbahnhof/id1130842417?mt=8"
@@ -79,7 +79,7 @@
       "contact": "Contagt\nhallo@contagt.com",
       "event": "",
       "date": "-",
-      "usedData": "Openstationmap",
+      "sources": "Openstationmap",
       "type": "APP",
       "category": "Projekte mit Daten",
       "link": "https://contagt.com/\nAPP: \"contagt\""
@@ -91,7 +91,7 @@
       "contact": "Heidelberg Mobil / Mathias Joest",
       "event": "",
       "date": "-",
-      "usedData": "Openstationmap, Aufzug-API, Beacons",
+      "sources": "Openstationmap, Aufzug-API, Beacons",
       "type": "APP",
       "category": "Projekte mit Daten",
       "link": "http://android.deepmap.de/release/jannowitz.apk"
@@ -103,7 +103,7 @@
       "contact": "joluc\nhttps://hackdash.org/users/57b1d84ad9284f016c0471a5",
       "event": "",
       "date": "-",
-      "usedData": "Adam API, Aufzugsdaten",
+      "sources": "Adam API, Aufzugsdaten",
       "type": "APP",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57b1d9c8d9284f016c0471a6"
@@ -115,7 +115,7 @@
       "contact": "Florian\nhttps://hackdash.org/users/57d858b1d9284f016c047411",
       "event": "",
       "date": "-",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Bot",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57d85ae6d9284f016c047413"
@@ -127,7 +127,7 @@
       "contact": "Patrick Brosipatrick\ninfo@patrickbrosi.de Alexey Valikov \nhttp://xing.to/va daajoe\nhttps://github.com/daajoe",
       "event": "",
       "date": "März 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/patrickbr/db-api-to-gtfs"
@@ -139,7 +139,7 @@
       "contact": "Markus Paeschke\nhttp://www.mpaeschke.de/",
       "event": "",
       "date": "Dezember 2015",
-      "usedData": "-",
+      "sources": "-",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/Neoklosch/db-api-server"
@@ -151,7 +151,7 @@
       "contact": "Markus Tacker\nm@coderbyheart.com",
       "event": "",
       "date": "November 2016",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/coderbyheart/db-station-rangefinder"
@@ -163,7 +163,7 @@
       "contact": "Daniel Hochleitner https://danielhochleitner.de/",
       "event": "",
       "date": "Februar 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/Dani3lSun/apex-plsql-api-bahn-fahrplan"
@@ -175,7 +175,7 @@
       "contact": "David Dreher\nhttps://www.wesolix.com/",
       "event": "",
       "date": "April 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/dredav/db-api-client"
@@ -187,7 +187,7 @@
       "contact": "Fabian Schmidt\nhttps://github.com/fceschmidt",
       "event": "",
       "date": "Juni 2016",
-      "usedData": "on-board data of Deutsche Bahn ICE trains",
+      "sources": "on-board data of Deutsche Bahn ICE trains",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/fceschmidt/db-train-info"
@@ -199,7 +199,7 @@
       "contact": "fredlockheed\nhttps://github.com/fredlockheed",
       "event": "",
       "date": "März 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/fredlockheed/db-fv-gtfs"
@@ -211,7 +211,7 @@
       "contact": "J0ANMM\nhttps://github.com/J0ANMM",
       "event": "",
       "date": "Juni 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/J0ANMM/db-legs"
@@ -223,7 +223,7 @@
       "contact": "jwagnercs\nhttps://github.com/jwagnercs",
       "event": "",
       "date": "März 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/jwagnercs/BahnClient"
@@ -235,7 +235,7 @@
       "contact": "Philipp Ottolinger\nhttps://github.com/ottlngr",
       "event": "",
       "date": "Mai 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/ottlngr/DBopen https://github.com/ottlngr/DBopen/blob/master/vignettes/DBopen.md"
@@ -247,7 +247,7 @@
       "contact": "Philipp Bock\n http://philippbock.de/",
       "event": "",
       "date": "Februar 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/pbock/fahrplan"
@@ -259,7 +259,7 @@
       "contact": "Philipp Bock\n http://philippbock.de/",
       "event": "",
       "date": "Juni 2016",
-      "usedData": "-",
+      "sources": "-",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/pbock/ticket-parser"
@@ -271,7 +271,7 @@
       "contact": "Ryan Nelson ryanhnelson@gmail.com",
       "event": "",
       "date": "März 2016",
-      "usedData": "Netzradar Daten",
+      "sources": "Netzradar Daten",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/ryanhnelson/bahn-netzradar"
@@ -283,7 +283,7 @@
       "contact": "Michael Schierl\nhttp://schierlm.users.sourceforge.net/",
       "event": "",
       "date": "März 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/schierlm/deutsche-bahn-fahrplan-api-grabbing"
@@ -295,7 +295,7 @@
       "contact": "Luca Zimmermann\n tech@sndstrm.de",
       "event": "",
       "date": "April 2016",
-      "usedData": "-",
+      "sources": "-",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/soundstorm/DeutscheBahnPy"
@@ -307,7 +307,7 @@
       "contact": "Pascal Weiland\n hello@pascal.pw",
       "event": "",
       "date": "März 2016",
-      "usedData": "-",
+      "sources": "-",
       "type": "Entwicklertool",
       "category": "Projekte mit Daten",
       "link": "https://github.com/weiland/fahrplan-elixir"
@@ -319,7 +319,7 @@
       "contact": "Basilicom",
       "event": "",
       "date": "September 2016",
-      "usedData": "Bahnpark",
+      "sources": "Bahnpark",
       "type": "externe Nutzung",
       "category": "Videos, Berichte, Präsentationen",
       "link": "https://www.it-talents.de/foerderung/code-competition/code-competition-08-2016"
@@ -331,7 +331,7 @@
       "contact": "coon42 https://github.com/coon42 \nRicardo Band \n email@ricardo.band Martin Holzhauer \nhttp://martin.holzhauer.eu/",
       "event": "",
       "date": "Januar 2016",
-      "usedData": "-",
+      "sources": "-",
       "type": "Hardware",
       "category": "Projekte mit Daten",
       "link": "https://github.com/c-base/db-fallblattanzeige"
@@ -343,7 +343,7 @@
       "contact": "Rafael Queren\nhttp://rafael-queren.de/",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Adam API",
+      "sources": "Adam API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "http://rafael-queren.de/stuff/ADAM_API/\nhttps://hackdash.org/projects/566c85ce62b2cc5d050af656"
@@ -355,7 +355,7 @@
       "contact": "tbsprs\nhttps://hackdash.org/users/566b40f162b2cc5d050af601 Philipp Bock\nhttps://hackdash.org/users/566bd85c62b2cc5d050af606 ubahnverleih https://hackdash.org/users/566f091862b2cc5d050af65d",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566b42c462b2cc5d050af603 https://raw.githack.com/tronicum/dbelevator/master/dbelevator.html?10072184"
@@ -367,7 +367,7 @@
       "contact": "Ayelet Sachto https://hackdash.org/users/566bf26862b2cc5d050af61c",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten, Aufzugsdaten",
+      "sources": "Stationsdaten, Aufzugsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566bf74a62b2cc5d050af61d"
@@ -379,7 +379,7 @@
       "contact": "Pierre Lukas https://hackdash.org/users/566bed0362b2cc5d050af609 Maxim https://hackdash.org/users/566c1c4a62b2cc5d050af64b",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566bf16162b2cc5d050af613 http://ec2-52-29-207-111.eu-central-1.compute.amazonaws.com/tbsprs/Bahnhofsquartett"
@@ -391,7 +391,7 @@
       "contact": "Stefan S. https://hackdash.org/users/566b01b062b2cc5d050af5f5",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Aufzugsdaten",
+      "sources": "Aufzugsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566bf10562b2cc5d050af610 https://github.com/tronicum/dbelevator example https://raw.githack.com/tronicum/dbelevator/master/dbelevator.html?10072184"
@@ -403,7 +403,7 @@
       "contact": "Markus Paeschke https://hackdash.org/users/566b2afc62b2cc5d050af5ff buffstop https://hackdash.org/users/566b257f62b2cc5d050af5fc Ein Fahrgast https://hackdash.org/users/585430deafa75c0b60657744",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/users/566b257f62b2cc5d050af5fc"
@@ -415,7 +415,7 @@
       "contact": "Thomas Tursics https://hackdash.org/users/52e2bffbdbcf2bba2f00001e Alexey Valikov https://hackdash.org/users/566c155d62b2cc5d050af63b",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566af3d762b2cc5d050af5f1 http://www.hotelroute.org/"
@@ -427,7 +427,7 @@
       "contact": "yetzt https://hackdash.org/users/52e2bfc5dbcf2bba2f000013",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566c247262b2cc5d050af64e http://git.dbhackathon.de/yetzt/ice-wecker"
@@ -439,7 +439,7 @@
       "contact": "Dierk Eichel https://hackdash.org/users/535d225424ec5bd433000002",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/users/535d225424ec5bd433000002"
@@ -451,7 +451,7 @@
       "contact": "Michael Reichert https://hackdash.org/users/566b427362b2cc5d050af602",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "OSM",
+      "sources": "OSM",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566c067c62b2cc5d050af625 https://www.openstreetmap.org/user/Nakaner/diary/37524"
@@ -463,7 +463,7 @@
       "contact": "knutator https://hackdash.org/users/535d0700f00af13d5a00002f stk https://hackdash.org/users/54e8eba3aee733344432769d Letty https://hackdash.org/users/566b31ec62b2cc5d050af600 Pamela Huerta https://hackdash.org/users/5749c56dd9284f016c046dd6",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten, Aufzugsdaten",
+      "sources": "Stationsdaten, Aufzugsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566b2a2962b2cc5d050af5fe"
@@ -475,7 +475,7 @@
       "contact": "Thomas Jäger thomas.jaeger@accso.de Hendrik Beck hendrik.bek@accso.de Felix Feldmeier felix.feldmeier@accso.de",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566bee2b62b2cc5d050af60f"
@@ -487,7 +487,7 @@
       "contact": "Paul Kunze https://hackdash.org/users/566b017162b2cc5d050af5f4",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "S21 Webcam",
+      "sources": "S21 Webcam",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566b027662b2cc5d050af5f6"
@@ -499,7 +499,7 @@
       "contact": "stk\nhttps://hackdash.org/users/54e8eba3aee733344432769d",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566aed6062b2cc5d050af5f0"
@@ -511,7 +511,7 @@
       "contact": "Gaby Becker https://hackdash.org/users/566b03f562b2cc5d050af5f7 Kirsten Hagedorn https://hackdash.org/users/566b255f62b2cc5d050af5fb Sandra Becker https://hackdash.org/users/567d316362b2cc5d050af694",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "OSM, Aufzugsdaten. Stationsdaten",
+      "sources": "OSM, Aufzugsdaten. Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566b05cd62b2cc5d050af5f9 http://www.deutschlands-bahnhoefe.de/"
@@ -523,7 +523,7 @@
       "contact": "yetzt https://hackdash.org/users/52e2bfc5dbcf2bba2f000013",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566c1d6b62b2cc5d050af64d\nhttp://git.dbhackathon.de/yetzt/datapackage-converter"
@@ -535,7 +535,7 @@
       "contact": "Dennis Hägler https://hackdash.org/users/566be4bc62b2cc5d050af607 rhaeckl https://hackdash.org/users/5688656d62b2cc5d050af6aa",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566be77262b2cc5d050af608\nhttps://github.com/DenniJensen/deutschebahn"
@@ -547,7 +547,7 @@
       "contact": "mzabel https://hackdash.org/users/566c016862b2cc5d050af61f Manuel Hegner https://hackdash.org/users/5672cae962b2cc5d050af679",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566c12a962b2cc5d050af638 http://mzabel.github.io/db-hackathon-delaymap-demo/index.html"
@@ -559,7 +559,7 @@
       "contact": "Markus Paeschke https://hackdash.org/users/566b2afc62b2cc5d050af5ff buffstop https://hackdash.org/users/566b257f62b2cc5d050af5fc",
       "event": "DB Hackathon #3",
       "date": "Dezember 2015",
-      "usedData": "Aufzugsdaten, Stationsdaten",
+      "sources": "Aufzugsdaten, Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/566b289962b2cc5d050af5fd 54.93.120.139/api"
@@ -571,7 +571,7 @@
       "contact": "Wo ist der Wagen https://hackdash.org/users/57650ce2d9284f016c046fa2 Patrick Müller https://hackdash.org/users/57655dbed9284f016c046fd1 Oliver Weyhmueller https://hackdash.org/users/57655ff5d9284f016c046fd4 tabacha https://hackdash.org/users/5762c68cd9284f016c046f85",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Wagenstand, Fahrplan API",
+      "sources": "Wagenstand, Fahrplan API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57650eaed9284f016c046fa3 https://github.com/tabacha/WoIstDerWagen https://twitter.com/WoIstDerWagen"
@@ -583,7 +583,7 @@
       "contact": "Londane https://hackdash.org/users/57655930d9284f016c046fc5 kornn https://hackdash.org/users/57656d77d9284f016c046fe4 Yves Kaufmann https://hackdash.org/users/57656dbad9284f016c046fe6",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Flinkster API",
+      "sources": "Flinkster API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57656d41d9284f016c046fe3 https://yveskaufmann.github.io/DBOpenData2016/"
@@ -595,7 +595,7 @@
       "contact": "Fiete https://hackdash.org/users/57653f82d9284f016c046fb6",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "VBB",
+      "sources": "VBB",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57654040d9284f016c046fb7"
@@ -607,7 +607,7 @@
       "contact": "ubahnverleih https://hackdash.org/users/566f091862b2cc5d050af65d",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/576550a5d9284f016c046fc2 https://github.com/ubahnverleih/Code-F1"
@@ -619,7 +619,7 @@
       "contact": "Uwe Kamper http://www.uwekamper.de/ Ricardo Band http://ricardo.band/",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/5765224ad9284f016c046fa8 https://github.com/c-base/db-fallblattanzeige-web/"
@@ -631,7 +631,7 @@
       "contact": "Alex Steiner @alexsteinerde www.alexsteiner.de",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57655d54d9284f016c046fd0"
@@ -643,7 +643,7 @@
       "contact": "Christoph Jurkowski https://hackdash.org/users/57656addd9284f016c046fdf, Francisco Stayko https://hackdash.org/users/576535b2d9284f016c046fad",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/5765365ad9284f016c046fb3"
@@ -655,7 +655,7 @@
       "contact": "Thomas Tursics https://hackdash.org/users/52e2bffbdbcf2bba2f00001e",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Datenportal",
+      "sources": "Datenportal",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/576531fdd9284f016c046fa9 https://github.com/tursics/data-dashboard http://daten-waben.tursics.de/index.html?city=deutschebahn"
@@ -667,7 +667,7 @@
       "contact": "Gabi Becker https://hackdash.org/users/566b03f562b2cc5d050af5f7",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Flinkster API, Wetter",
+      "sources": "Flinkster API, Wetter",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/576560fad9284f016c046fda http://www.deutschlands-bahnhoefe.de/ (sichtbar vorerst unter http://www.renatetest.deutschlands-bahnhoefe.de/)"
@@ -679,7 +679,7 @@
       "contact": "Melana https://hackdash.org/users/57654266d9284f016c046fb8",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57655b6dd9284f016c046fca"
@@ -691,7 +691,7 @@
       "contact": "Jannis Redmann https://hackdash.org/users/5765359ad9284f016c046fab Julius Te https://hackdash.org/users/5765b42bd9284f016c04700b",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57653607d9284f016c046faf http://jannisr.de/ice-tracker/"
@@ -703,7 +703,7 @@
       "contact": "emteg https://hackdash.org/users/57651a0ed9284f016c046fa5 Tyrman https://hackdash.org/users/5765cc72d9284f016c04700d",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57651acfd9284f016c046fa6"
@@ -715,7 +715,7 @@
       "contact": "Robert Willemelis https://hackdash.org/users/57629caad9284f016c046f83",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/users/57629caad9284f016c046f83"
@@ -727,7 +727,7 @@
       "contact": "Achim Friedland https://hackdash.org/users/57656208d9284f016c046fdb",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Flinkster, CallABike station data and open e-mobility data from Open Charge Map, Belectric Drive, e-Stations, E-Wald and Berlin",
+      "sources": "Flinkster, CallABike station data and open e-mobility data from Open Charge Map, Belectric Drive, e-Stations, E-Wald and Berlin",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57656336d9284f016c046fdc"
@@ -739,7 +739,7 @@
       "contact": "Paul Kunze https://hackdash.org/users/566b017162b2cc5d050af5f4",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57654a45d9284f016c046fbc https://play.google.com/store/apps/details?id=de.paulkunze.piui"
@@ -751,7 +751,7 @@
       "contact": "Tobias https://hackdash.org/users/576536d5d9284f016c046fb4",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Flinkster API",
+      "sources": "Flinkster API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/576538f8d9284f016c046fb5 https://github.com/tlindener/smartroutingnext"
@@ -763,7 +763,7 @@
       "contact": "Ansgar Schmidt https://hackdash.org/users/5647451eb513015e0384c13f",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57654bf8d9284f016c046fbf"
@@ -775,7 +775,7 @@
       "contact": "SebasoDB https://hackdash.org/users/5666d68762b2cc5d050af5d7",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/576a501cd9284f016c047026"
@@ -787,7 +787,7 @@
       "contact": "Michael Kreil https://hackdash.org/users/56439ddab513015e0384c11c",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "Fahrplan API, Google Kalender, Stationsdaten",
+      "sources": "Fahrplan API, Google Kalender, Stationsdaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/576560d4d9284f016c046fd8 https://github.com/MichaelKreil/dbcalendar https://michaelkreil.github.io/dbcalendar/demo.html"
@@ -799,7 +799,7 @@
       "contact": "Stefan Hintz https://hackdash.org/users/5765445bd9284f016c046fb9",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/5765495cd9284f016c046fba"
@@ -811,7 +811,7 @@
       "contact": "Melana https://hackdash.org/users/57654266d9284f016c046fb8",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/57655741d9284f016c046fc3"
@@ -823,7 +823,7 @@
       "contact": "Melana https://hackdash.org/users/57654266d9284f016c046fb8",
       "event": "DB Hackathon #4",
       "date": "Juni 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://hackdash.org/projects/5765585fd9284f016c046fc4"
@@ -835,7 +835,7 @@
       "contact": "Niko Nittka",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -847,7 +847,7 @@
       "contact": "Alexey Valikov",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -859,7 +859,7 @@
       "contact": "Andreas Plonné",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -871,7 +871,7 @@
       "contact": "Lukas Schmidt",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -883,7 +883,7 @@
       "contact": "Thomas Kramer",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -895,7 +895,7 @@
       "contact": "Klaus Bermuth",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -907,7 +907,7 @@
       "contact": "Tobias Keller",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -919,7 +919,7 @@
       "contact": "Ina Engel-Hermann",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -931,7 +931,7 @@
       "contact": "Karsten Duwe",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -943,7 +943,7 @@
       "contact": "Maximilian Hegele",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -955,7 +955,7 @@
       "contact": "Michael Czygan michael.czygan@dbfuhrpark.de",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -967,7 +967,7 @@
       "contact": "Klaus Dürnhofer",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -979,7 +979,7 @@
       "contact": "Björn Weißhaupt",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -991,7 +991,7 @@
       "contact": "Nicolas Caspari",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1003,7 +1003,7 @@
       "contact": "Joachim Bürkle",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1015,7 +1015,7 @@
       "contact": "Gaby Becker",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1027,7 +1027,7 @@
       "contact": "Thomas Nolte",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1039,7 +1039,7 @@
       "contact": "Sebastian Albert",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1051,7 +1051,7 @@
       "contact": "Akhil Kalra",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1063,7 +1063,7 @@
       "contact": "Akhil Kalra",
       "event": "Mitarbeiter-Hackathon",
       "date": "September 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1075,7 +1075,7 @@
       "contact": "Roland Wagner Roland Olbricht",
       "event": "",
       "date": "",
-      "usedData": "Aufzüge, Fahrtreppen, Wegeführung, Level, POIs, Daten aus OSM",
+      "sources": "Aufzüge, Fahrtreppen, Wegeführung, Level, POIs, Daten aus OSM",
       "type": "OSM",
       "category": "Projekte mit Daten",
       "link": "http://www.openstationmap.org/#18/52.51022/13.43477"
@@ -1087,7 +1087,7 @@
       "contact": "Constantin Müller\nhttp://blattspinat.com/",
       "event": "",
       "date": "",
-      "usedData": "Stationsdaten und Stationsdaten (RNI), Daten aus OSM",
+      "sources": "Stationsdaten und Stationsdaten (RNI), Daten aus OSM",
       "type": "OSM",
       "category": "Projekte mit Daten",
       "link": "http://blattspinat.com/index.php/posts/bahnroulette http://opendata.blattspinat.com/"
@@ -1099,7 +1099,7 @@
       "contact": "",
       "event": "",
       "date": "November 2015",
-      "usedData": "Daten aus OSM",
+      "sources": "Daten aus OSM",
       "type": "OSM",
       "category": "Videos, Berichte, Präsentationen",
       "link": "http://blog.openrailwaymap.org/?lang=de#29"
@@ -1111,7 +1111,7 @@
       "contact": "Michael Reichert nakaner@gmx.net",
       "event": "",
       "date": "",
-      "usedData": "Steckennetz, Daten aus OSM",
+      "sources": "Steckennetz, Daten aus OSM",
       "type": "OSM",
       "category": "Projekte mit Daten",
       "link": "http://lists.openrailwaymap.org/archives/openrailwaymap/2016-March/000434.html"
@@ -1123,7 +1123,7 @@
       "contact": "Michael Reichert nakaner@gmx.net",
       "event": "",
       "date": "",
-      "usedData": "Stuttgart 21, Stationsdaten, Bahnsteigdaten, Betriebsstellenverzeichnis, Daten aus OSM",
+      "sources": "Stuttgart 21, Stationsdaten, Bahnsteigdaten, Betriebsstellenverzeichnis, Daten aus OSM",
       "type": "OSM",
       "category": "Projekte mit Daten",
       "link": "http://www.openstreetmap.org/user/Nakaner/diary/36323"
@@ -1135,7 +1135,7 @@
       "contact": "Robert Katzki https://robert.katzki.de/",
       "event": "",
       "date": "",
-      "usedData": "Steckennetz, Daten aus OSM",
+      "sources": "Steckennetz, Daten aus OSM",
       "type": "OSM",
       "category": "Projekte mit Daten",
       "link": "https://bahnstreckennetz.de/"
@@ -1147,7 +1147,7 @@
       "contact": "Ingo Bartling",
       "event": "Uni",
       "date": "April 2016",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Lehrvideo",
       "category": "Projekte mit Daten",
       "link": "http://blog.ingo-bartling.de/2016/04/24/programmierbeispiel-db/"
@@ -1159,7 +1159,7 @@
       "contact": "Florian Alt",
       "event": "Uni",
       "date": "WS 2016/2017",
-      "usedData": "",
+      "sources": "",
       "type": "Vorlesung",
       "category": "Projekte mit Daten",
       "link": "http://www.medien.ifi.lmu.de/lehre/ws1617/iv/"
@@ -1171,7 +1171,7 @@
       "contact": "Malte Heidenreich",
       "event": "Uni",
       "date": "2016",
-      "usedData": "Fahrplan-API",
+      "sources": "Fahrplan-API",
       "type": "Vorlesung",
       "category": "Projekte mit Daten",
       "link": "https://users.informatik.haw-hamburg.de/~ubicomp/projekte/master2016-proj/berichte.html"
@@ -1183,7 +1183,7 @@
       "contact": "Jörn Loviscach",
       "event": "Uni",
       "date": "April 2016",
-      "usedData": "Stationsdaten",
+      "sources": "Stationsdaten",
       "type": "Lehrvideo",
       "category": "Projekte mit Daten",
       "link": "https://www.youtube.com/watch?v=41SdVA2aqKw http://www.j3L7h.de/videos.html"
@@ -1195,7 +1195,7 @@
       "contact": "NavVis",
       "event": "",
       "date": "",
-      "usedData": "Durch Scan / Punktwolke",
+      "sources": "Durch Scan / Punktwolke",
       "type": "Viewer",
       "category": "Projekte mit Daten",
       "link": "https://de.navvis.com/DB-Suedkreuz"
@@ -1207,7 +1207,7 @@
       "contact": "",
       "event": "",
       "date": "April 2016",
-      "usedData": "",
+      "sources": "",
       "type": "Visualisierung",
       "category": "Projekte mit Daten",
       "link": "http://pastebin.com/f0B8n5e2"
@@ -1219,7 +1219,7 @@
       "contact": "Michael Dittrich\nhttp://www.michaeldittrich.de/",
       "event": "",
       "date": "Januar 2016",
-      "usedData": "DS100",
+      "sources": "DS100",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "http://www.michaeldittrich.de/abkuerzungen/index.php"
@@ -1231,7 +1231,7 @@
       "contact": "Dorette Kranich Gerhard Dingfelder info@frankenschienen.de",
       "event": "",
       "date": "2016",
-      "usedData": "Wagenstand",
+      "sources": "Wagenstand",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "http://www.wagenstand.de/"
@@ -1243,7 +1243,7 @@
       "contact": "Harris Brakmic\n http://blog.brakmic.com/",
       "event": "",
       "date": "Februar 2016",
-      "usedData": "Fahrplan API",
+      "sources": "Fahrplan API",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/brakmic/OpenLok"
@@ -1255,7 +1255,7 @@
       "contact": "Janis Streib janis@dogcraft.de",
       "event": "",
       "date": "Januar 2016",
-      "usedData": "Aufzugs API",
+      "sources": "Aufzugs API",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/janisstreib/db-aufzug"
@@ -1267,7 +1267,7 @@
       "contact": "j-o-d-o https://github.com/j-o-d-o",
       "event": "",
       "date": "September 2016",
-      "usedData": "Parkplätze API (Beta)",
+      "sources": "Parkplätze API (Beta)",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/j-o-d-o/parkfind\nhttps://www.parkfind.de/"
@@ -1279,7 +1279,7 @@
       "contact": "nFrechen",
       "event": "",
       "date": "August 2016",
-      "usedData": "Wagenstand",
+      "sources": "Wagenstand",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/nFrechen/DB-Wagenreihungsplan-XML-to-HTML http://n-dim.de/DB-Wagenreihungsplan-XML-to-HTML/BGS_2016-06-04_16-28-18.xml"
@@ -1291,7 +1291,7 @@
       "contact": "yetzt\n https://yetzt.me/",
       "event": "Contest",
       "date": "Januar 2016",
-      "usedData": "Aufzugs API",
+      "sources": "Aufzugs API",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "https://github.com/yetzt/liftphone"
@@ -1303,7 +1303,7 @@
       "contact": "Yannik Wohnsdorf,",
       "event": "Uni",
       "date": "April 2017",
-      "usedData": "FPL API",
+      "sources": "FPL API",
       "type": "Vorlesung",
       "category": "Projekte mit Daten",
       "link": "http://www.dvwg.de/veranstaltungen/veranstaltungskalender/veranstaltung/datum/2017/04/24/vortraege-junger-verkehrswissenschaftler-4.html"
@@ -1315,7 +1315,7 @@
       "contact": "Marc Braun",
       "event": "",
       "date": "",
-      "usedData": "ADAM",
+      "sources": "ADAM",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "http://s-bahn-chaos.de/monitor/facilities.htm"
@@ -1327,7 +1327,7 @@
       "contact": "",
       "event": "Contest",
       "date": "",
-      "usedData": "",
+      "sources": "",
       "type": "",
       "category": "Projekte mit Daten",
       "link": "http://olbricht.nrw/adam/legend.html http://olbricht.nrw/adam/bahnhof.html"
@@ -1339,7 +1339,7 @@
       "contact": "Thorsten Gehrlein\ninfo@mobil-in-bonn.de",
       "event": "",
       "date": "",
-      "usedData": "Parken",
+      "sources": "Parken",
       "type": "Anwendung",
       "category": "Projekte mit Daten",
       "link": "http://www.mobil-in-bonn.de/index_db.html"
@@ -1351,7 +1351,7 @@
       "contact": "Prof.U.Lipeck",
       "event": "Uni",
       "date": "Februar 2017",
-      "usedData": "",
+      "sources": "",
       "type": "Abschlussarbeit",
       "category": "Projekte mit Daten",
       "link": "https://www.dbs.uni-hannover.de/"
@@ -1363,7 +1363,7 @@
       "contact": "J. Gómez Castaño \nJ. J. Cabrera García",
       "event": "Uni",
       "date": "2016",
-      "usedData": "",
+      "sources": "",
       "type": "Paper",
       "category": "Projekte mit Daten",
       "link": "https://www.witpress.com/Secure/elibrary/papers/CR16/CR16034FU1.pdf"
@@ -1375,7 +1375,7 @@
       "contact": "",
       "event": "",
       "date": "",
-      "usedData": "",
+      "sources": "",
       "type": "Service",
       "category": "Projekte mit Daten",
       "link": "https://legal.here.com/terms/transit-content-supplier/terms-and-notices/"
@@ -1387,7 +1387,7 @@
       "contact": "Alexey Valikov\nMichael Ziske",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "GTFS timetables from VBB, RNV, SWU, AMAT and Swiss Open Transport Data",
+      "sources": "GTFS timetables from VBB, RNV, SWU, AMAT and Swiss Open Transport Data",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1399,7 +1399,7 @@
       "contact": "Hagen Graf\nGaby Becker",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Stationsdaten - OpenData - Bahn",
+      "sources": "Stationsdaten - OpenData - Bahn",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1411,7 +1411,7 @@
       "contact": "Miguel",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "deutschlands-bahnhöfe.de",
+      "sources": "deutschlands-bahnhöfe.de",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1423,7 +1423,7 @@
       "contact": "Gaby Becker",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "http://data.deutschebahn.com/dataset/data-stationsdaten / http://www.deutschlands-bahnhoefe.org/entwicklung",
+      "sources": "http://data.deutschebahn.com/dataset/data-stationsdaten / http://www.deutschlands-bahnhoefe.org/entwicklung",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "http://www.deutschlands-bahnhoefe.org/entwicklung \nhttps://github.com/androidoma\nhttps://plus.google.com/u/0/communities/106637962046960939634"
@@ -1435,7 +1435,7 @@
       "contact": "Thomas Tursics\nKirsten Hagedorn",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Adressen der Bahnhöfe von Deutschland und Schweiz",
+      "sources": "Adressen der Bahnhöfe von Deutschland und Schweiz",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://github.com/androidoma/deutschlands-bahnhoefe.de, http://www.deutschlands-bahnhoefe.de/"
@@ -1447,7 +1447,7 @@
       "contact": "Lorenz",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "DB Cargo Verkehrsdaten, Betriebsstellendaten",
+      "sources": "DB Cargo Verkehrsdaten, Betriebsstellendaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1459,7 +1459,7 @@
       "contact": "Jonas Westphal",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "INSPIRE-Netz, Betriebsstellen, Stationsdaten SuS/RNI",
+      "sources": "INSPIRE-Netz, Betriebsstellen, Stationsdaten SuS/RNI",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1471,7 +1471,7 @@
       "contact": "reiner stieger\nmelinda petrus \nandrien phillipe",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "open street map",
+      "sources": "open street map",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1483,7 +1483,7 @@
       "contact": "Jannis\nJulius",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "mobil-DB-API, SNCF-API, trainline-eu/stations",
+      "sources": "mobil-DB-API, SNCF-API, trainline-eu/stations",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://github.com/juliuste/db-sncf-prices"
@@ -1495,7 +1495,7 @@
       "contact": "Simon Pizonka",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Flinkster API, Google Maps Distance Matrix API",
+      "sources": "Flinkster API, Google Maps Distance Matrix API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://github.com/Ebolon/AlexaFlinkster"
@@ -1507,7 +1507,7 @@
       "contact": "Simon Pizonka",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "DB Open Data, darksky.net/",
+      "sources": "DB Open Data, darksky.net/",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://github.com/Ebolon/DBCargoDarkSky"
@@ -1519,7 +1519,7 @@
       "contact": "@ubahnverleih\n@robbi5",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "SWU GTFS",
+      "sources": "SWU GTFS",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://ulm.ententei.ch/"
@@ -1531,7 +1531,7 @@
       "contact": "Ayelet Sachto",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "StaDa-Station_Data - v2",
+      "sources": "StaDa-Station_Data - v2",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1543,7 +1543,7 @@
       "contact": "Michael\nArne Sebastian",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "http://data.deutschebahn.com/",
+      "sources": "http://data.deutschebahn.com/",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "Webmap mit Streckenschwerpunkten: http://cargoweakspots.herokoapp.com/ (https://github.com/dewall/CargoWeakSpots)\n\n Heatmap mit TimeSlider: http://esri-de-edu.maps.arcgis.com/apps/TimeAware/index.html?appid=87eb698afa524cab9a145f6200a95a56"
@@ -1555,7 +1555,7 @@
       "contact": "stefan kaufmann\nwalter palmetshofer \nphilipp bock",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Liste aller Landraete",
+      "sources": "Liste aller Landraete",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "ulmapi.de/beyondtransit"
@@ -1567,7 +1567,7 @@
       "contact": "Falco Nogatz\nChristian Hieke",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Usereingaben",
+      "sources": "Usereingaben",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": ""
@@ -1579,7 +1579,7 @@
       "contact": "Thorsten Schauss\nStefan Opitz",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Flinkster-API",
+      "sources": "Flinkster-API",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "http://bit.ly/2hJJ1Ah; http://bit.ly/2hJJ8Md"
@@ -1591,7 +1591,7 @@
       "contact": "David Dejori\nMoriz Martiner \nAlex Lardschneider \nMartin Fink",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "data.deutschebahn.com, Google Places, Open Weather Maps,",
+      "sources": "data.deutschebahn.com, Google Places, Open Weather Maps,",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "https://github.com/Deutsche-Bahn-Hackathon"
@@ -1603,7 +1603,7 @@
       "contact": "Mathias\nMarc, Simon \nFlorian\nPatrick\nMarco",
       "event": "DB Hackathon #5",
       "date": "Dezember 2016",
-      "usedData": "Fahrplan API DB Soll-Daten, VBB-Fahrplandaten",
+      "sources": "Fahrplan API DB Soll-Daten, VBB-Fahrplandaten",
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "http://touch-fahrplan.eu/"
