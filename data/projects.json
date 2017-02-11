@@ -1607,18 +1607,6 @@
       "type": "Hackathon-Ergebnisse",
       "category": "Projekte mit Daten",
       "link": "http://touch-fahrplan.eu/"
-    },
-    {
-      "id": "id",
-      "title": "title",
-      "description": "description",
-      "contact": "date",
-      "event": "link",
-      "date": "",
-      "usedData": "",
-      "type": "",
-      "category": "",
-      "link": ""
     }
   ],
   "links": [
