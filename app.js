@@ -35,53 +35,83 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
         .force('charge', d3.forceManyBody())
         .force('center', d3.forceCenter(width / 2, height / 2));
 
-    d3.json('data/projects.json', function(error, data) {
-        if (error) throw error;
+    var sourceIds = {};
 
-        simulation
-            .nodes(data.nodes)
-            .on('tick', tick);
+    d3.json('data/sources.json', function (error, sources) {
+        d3.json('data/projects.json', function(error, data) {
+            if (error) throw error;
 
-        simulation
-            .force('link')
-            .links(data.links);
+            sources.forEach(function (d) {
+                sourceIds[d] = data.nodes.length;
+                data.nodes.push({
+                    "id": data.nodes.length,
+                    "class": "source",
+                    "title": d
+                })
+            });
 
-        var node = view.selectAll('.node')
-            .data(data.nodes)
-            .enter().append('g')
-            .attr('class', 'node')
-            .call(d3.drag()
-                .on('start', beginDrag)
-                .on('drag', drag)
-                .on('end', endDrag)
+            data.links = [];
+
+            data.nodes.forEach(function (d) {
+                if (d.class !== 'source') {
+                    d.sources.forEach(function (s) {
+                        if (!sourceIds[s]) {
+                            debugger;
+                        }
+                        data.links.push({
+                            source: d.id,
+                            target: sourceIds[s],
+                            value: 1
+                        })
+                    })
+                }
+            });
+
+            simulation
+                .nodes(data.nodes)
+                .on('tick', tick);
+
+            simulation
+                .force('link')
+                .links(data.links);
+
+            var node = view.selectAll('.node')
+                .data(data.nodes)
+                .enter().append('g')
+                .attr('class', 'node')
+                .call(d3.drag()
+                    .on('start', beginDrag)
+                    .on('drag', drag)
+                    .on('end', endDrag)
             );
 
-        node.append('circle')
-            .attr('r', 10)
-            .attr('fill', function(d) { return colors(d.type); });
+            node.append('circle')
+                .attr('r', 10)
+                .attr('fill', function(d) { return colors(d.type); });
 
-        node.append('text')
-            .attr('dx', 0)
-            .attr('dy', '2em')
-            .text(function(d) { return d.title; });
+            node.append('text')
+                .attr('dx', 0)
+                .attr('dy', '2em')
+                .text(function(d) { return d.title; });
 
-        var link = view.append('g')
-            .attr('class', 'links')
-            .selectAll('line')
-            .data(data.links)
-            .enter().append('line');
+            var link = view.append('g')
+                .attr('class', 'links')
+                .selectAll('line')
+                .data(data.links)
+                .enter().append('line');
 
-        function tick() {
-            link
-                .attr('x1', function(d) { return d.source.x; })
-                .attr('y1', function(d) { return d.source.y; })
-                .attr('x2', function(d) { return d.target.x; })
-                .attr('y2', function(d) { return d.target.y; });
+            function tick() {
+                link
+                    .attr('x1', function(d) { return d.source.x; })
+                    .attr('y1', function(d) { return d.source.y; })
+                    .attr('x2', function(d) { return d.target.x; })
+                    .attr('y2', function(d) { return d.target.y; });
 
-            node.attr('transform', function(d) {
-                return 'translate(' + d.x + ',' + d.y + ')';
-            });
-        }
+                node.attr('transform', function(d) {
+                    return 'translate(' + d.x + ',' + d.y + ')';
+                });
+            }
+        });
     });
 
     function beginDrag(d) {
