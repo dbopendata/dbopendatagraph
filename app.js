@@ -28,7 +28,16 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
 
     var view = svg.append('g');
 
-    var colors = d3.scaleOrdinal(d3.schemeCategory20);
+    var colors = d3.scaleOrdinal([
+        '#f01414',
+        '#0a1e6E',
+        '#CC0000',
+        '#878c96',
+        '#FF5A64',
+        '#375FC3',
+        '#B20000',
+        '#000A5A'
+    ]);
 
     var simulation = d3.forceSimulation()
         .force('link', d3.forceLink().id(function(d) { return d.id; }))
@@ -42,11 +51,12 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
             if (error) throw error;
 
             sources.forEach(function (d) {
-                sourceIds[d] = data.nodes.length;
+                sourceIds[d.title] = data.nodes.length;
                 data.nodes.push({
                     "id": data.nodes.length,
                     "class": "source",
-                    "title": d,
+                    "type": d.type,
+                    "title": d.title,
                     "connections": 0
                 })
             });
@@ -54,7 +64,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
             data.links = [];
 
             data.nodes.forEach(function (d) {
-                if (d.class !== 'source') {
+                if (d.sources) {
                     d.sources.forEach(function (s) {
                         if (!sourceIds[s]) {
                             debugger;
@@ -108,7 +118,9 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                 .attr('r', function (d) {
                     return 20 + 3 * d.connections;
                 })
-                .attr('fill', '#48c');
+                .attr('fill', function (d) {
+                    return colors(d.type);
+                });
 
             node.append('foreignObject')
                 .attr("x", -50)
