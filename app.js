@@ -47,7 +47,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                     "id": data.nodes.length,
                     "class": "source",
                     "title": d,
-                    "users": 0
+                    "connections": 0
                 })
             });
 
@@ -64,8 +64,9 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                             target: sourceIds[s],
                             value: 1
                         });
-                        data.nodes[sourceIds[s]].users++
-                    })
+                        data.nodes[sourceIds[s]].connections++;
+                    });
+                    data.nodes[d.id - 1].connections = d.sources.length;
                 }
             });
 
@@ -77,7 +78,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
                 .force('link')
                 .links(data.links)
                 .distance(function (d) {
-                    return 10 * ((d.source.sources ? d.source.sources.length : 1) + d.target.users);
+                    return 10 * (d.source.connections + d.target.connections);
                 });
 
             var node = view.selectAll('.node')
@@ -91,12 +92,18 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
             );
 
             node.append('circle')
-                .attr('r', 10)
+                .attr('r', function (d) {
+                    return 10 + 2 * d.connections;
+                })
                 .attr('fill', function(d) { return colors(d.type); });
 
-            node.append('text')
-                .attr('dx', 0)
-                .attr('dy', '2em')
+            node.append('foreignObject')
+                .attr("x", -50)
+                .attr("y", 10)
+                .attr("width", 100)
+                .attr("height", 100)
+                .append('xhtml:body')
+                .append('div')
                 .text(function(d) { return d.title; });
 
             var link = view.append('g')
