@@ -112,7 +112,9 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
 
             node.append('foreignObject')
                 .attr("x", -50)
-                .attr("y", 10)
+                .attr("y", function (d) {
+                    return d.class === 'project' ? -10 : 10;
+                })
                 .attr("width", 100)
                 .attr("height", 100)
                 .append('xhtml:body')
