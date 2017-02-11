@@ -57,7 +57,7 @@ requirejs(['node_modules/d3/build/d3.min'], function(d3) {
             );
 
         node.append('circle')
-            .attr('r', 20)
+            .attr('r', 10)
             .attr('fill', function(d) { return colors(d.type); });
 
         node.append('text')
