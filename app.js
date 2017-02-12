@@ -8,10 +8,11 @@
 requirejs.config({
     baseUrl: '.',
     paths: {
+        'd3': 'https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min'
     }
 });
 
-requirejs(['node_modules/d3/build/d3.min'], function(d3) {
+requirejs(['d3'], function(d3) {
     var width = window.innerWidth;
     var height = window.innerHeight;
 

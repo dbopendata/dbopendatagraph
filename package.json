@@ -9,6 +9,5 @@
   "author": "Joachim Schirrmacher <joachim.schirrmacher@deutschebahn.com>",
   "license": "MIT",
   "dependencies": {
-    "d3": "^4.5.0"
   }
 }
