@@ -78,4 +78,15 @@ button {
     line-height: 1.35em;
     font-size: 1.2em;
   }
+
+  p:not(:first-of-type) {
+    position: relative;
+    margin-left: 100px;
+    word-wrap: break-word;
+
+    b {
+      position: absolute;
+      left: -100px;
+    }
+  }
 }

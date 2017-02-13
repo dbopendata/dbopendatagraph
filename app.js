@@ -130,10 +130,11 @@ requirejs(['d3'], function(d3) {
 
             svg.selectAll('.project')
                 .on('click', function (e) {
-                    var content = '<h2>' + e.title + '</h2><p>' + e.description + '</p><p>' + e.contact + '</p>' +
-                            '<p>' + e.event + '</p>' +
-                            '<p>' + e.date + '</p>' +
-                            '<p>' + e.category + '</p>' +
+                    var content = '<h2>' + e.title + '</h2><p>' + e.description + '</p>' +
+                            (e.contact ? '<p><b>Autor(en):</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
+                            (e.event ? '<p><b>Entstanden:</b> ' + e.event + '</p>' : '') +
+                            (e.date ? '<p><b>Wann:</b> ' + e.date + '</p>' : '') +
+                            (e.category ? '<p><b>Kategorie:</b> ' + e.category + '</p>' : '') +
                             '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>' +
                             '<button>Schließen</button>';
                     overlay

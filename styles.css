@@ -62,5 +62,12 @@ button {
     text-align: left;
     line-height: 1.35em;
     font-size: 1.2em; }
+  #overlay p:not(:first-of-type) {
+    position: relative;
+    margin-left: 100px;
+    word-wrap: break-word; }
+    #overlay p:not(:first-of-type) b {
+      position: absolute;
+      left: -100px; }
 
 /*# sourceMappingURL=styles.css.map */
