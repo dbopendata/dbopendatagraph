@@ -141,19 +141,41 @@ requirejs(['d3'], function(d3) {
                         .select('div').html(content)
                 });
 
-            node.append('foreignObject')
-                .attr("x", -50)
-                .attr("y", -10)
-                .attr("width", 100)
-                .attr("height", 50)
-                .append('xhtml:body')
-                .append('div')
-                .attr("style", function (d) {
-                    if (d.class === 'project') {
-                        return "border-color: " + colors(d.type);
-                    }
-                })
-                .text(function(d) { return d.title; });
+            if (document.implementation.hasFeature("www.http://w3.org/TR/SVG11/feature#Extensibility","1.1")) {
+                node.append('foreignObject')
+                    .attr("x", -50)
+                    .attr("y", -10)
+                    .attr("width", 100)
+                    .attr("height", 50)
+                    .append('xhtml:body')
+                    .append('div')
+                    .attr("style", function (d) {
+                        if (d.class === 'project') {
+                            return "border-color: " + colors(d.type);
+                        }
+                    })
+                    .text(function (d) {
+                        return d.title;
+                    });
+            } else {
+                node.append('rect')
+                    .attr('class', 'text-bg')
+                    .attr('x', '-50')
+                    .attr('y', '-10')
+                    .attr('width', '100')
+                    .attr('height', '15')
+                    .attr('fill', function (d) {
+                        return d.class === 'project' ? 'white' : 'transparent';
+                    })
+                    .attr('stroke', function (d) {
+                        return d.class === 'project' ? colors(d.type) : 'transparent';
+                    });
+
+                node.append('text')
+                    .text(function (d) {
+                        return d.title;
+                    });
+            }
 
             function tick() {
                 link

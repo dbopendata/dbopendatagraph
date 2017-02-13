@@ -33,6 +33,9 @@ circle {
 line {
   stroke-width: 2; }
 
+text {
+  text-anchor: middle; }
+
 button {
   float: right;
   border: 2px solid #f01414;
