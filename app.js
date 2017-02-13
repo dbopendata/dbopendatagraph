@@ -17,8 +17,7 @@ requirejs(['d3'], function(d3) {
     var height = window.innerHeight;
 
     var zoom = d3.zoom()
-        .scaleExtent([0.1, 4])
-        .translateExtent([[-100, -100], [width + 90, height + 100]]);
+        .scaleExtent([0.1, 4]);
 
     var svg = d3.select('body').append('svg:svg')
         .attr('width', width)
