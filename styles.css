@@ -56,9 +56,8 @@ button {
   #overlay div {
     background-color: white;
     width: 400px;
-    height: 400px;
     max-width: 100%;
-    padding: 20px 50px;
+    padding: 20px 50px 60px;
     margin: 5em auto;
     text-align: left;
     line-height: 1.35em;
