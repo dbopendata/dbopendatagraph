@@ -52,9 +52,9 @@ requirejs(['d3'], function(d3) {
             if (error) throw error;
 
             sources.forEach(function (d) {
-                sourceIds[d.title] = data.nodes.length;
+                sourceIds[d.title] = data.nodes.length + 1;
                 data.nodes.push({
-                    "id": data.nodes.length,
+                    "id": data.nodes.length + 1,
                     "class": "source",
                     "type": d.type,
                     "title": d.title,
@@ -75,7 +75,7 @@ requirejs(['d3'], function(d3) {
                             target: sourceIds[s],
                             value: 1
                         });
-                        data.nodes[sourceIds[s]].connections++;
+                        data.nodes[sourceIds[s] - 1].connections++;
                     });
                     data.nodes[d.id - 1].connections = d.sources.length;
                     data.nodes[d.id - 1].class = 'project';
