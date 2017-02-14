@@ -20,7 +20,9 @@ div {
 .project div {
   background-color: white;
   border-width: 1px;
-  border-style: solid;
+  border-style: solid; }
+
+.node {
   cursor: pointer; }
 
 svg div {
@@ -62,11 +64,11 @@ button {
     text-align: left;
     line-height: 1.35em;
     font-size: 1.2em; }
-  #overlay p:not(:first-of-type) {
+  #overlay p.labled {
     position: relative;
     margin-left: 100px;
     word-wrap: break-word; }
-    #overlay p:not(:first-of-type) b {
+    #overlay p.labled b {
       position: absolute;
       left: -100px; }
 

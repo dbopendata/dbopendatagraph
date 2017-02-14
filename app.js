@@ -39,6 +39,13 @@ requirejs(['d3'], function(d3) {
         '#000A5A'
     ]);
 
+    var categoryMapping = {
+        DBAPI: "API der Deutschen Bahn AG",
+        DBOD: "OpenData der Deutschen Bahn AG",
+        EXAPI: "API einer anderen Quelle",
+        EXOD: "OpenData einer anderen Quelle"
+    };
+
     var simulation = d3.forceSimulation()
         .force('link', d3.forceLink().id(function(d) { return d.id; }))
         .force('charge', d3.forceManyBody())
@@ -51,14 +58,11 @@ requirejs(['d3'], function(d3) {
             if (error) throw error;
 
             sources.forEach(function (d) {
-                sourceIds[d.title] = data.nodes.length + 1;
-                data.nodes.push({
-                    "id": data.nodes.length + 1,
-                    "class": "source",
-                    "type": d.type,
-                    "title": d.title,
-                    "connections": 0
-                })
+                d.id = sourceIds[d.title] = data.nodes.length + 1;
+                d.class = 'source node';
+                d.connections = 0;
+                d.category = categoryMapping[d.type];
+                data.nodes.push(d);
             });
 
             data.links = [];
@@ -77,7 +81,7 @@ requirejs(['d3'], function(d3) {
                         data.nodes[sourceIds[s] - 1].connections++;
                     });
                     data.nodes[d.id - 1].connections = d.sources.length;
-                    data.nodes[d.id - 1].class = 'project';
+                    data.nodes[d.id - 1].class = 'project node';
                 }
             });
 
@@ -127,14 +131,15 @@ requirejs(['d3'], function(d3) {
                     overlay.attr('style', null);
                 });
 
-            svg.selectAll('.project')
+            svg.selectAll('.node')
                 .on('click', function (e) {
-                    var content = '<h2>' + e.title + '</h2><p>' + e.description + '</p>' +
-                            (e.contact ? '<p><b>Autor(en):</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
-                            (e.event ? '<p><b>Entstanden:</b> ' + e.event + '</p>' : '') +
-                            (e.date ? '<p><b>Wann:</b> ' + e.date + '</p>' : '') +
-                            (e.category ? '<p><b>Kategorie:</b> ' + e.category + '</p>' : '') +
-                            '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>' +
+                    var content = '<h2>' + e.title + '</h2>' +
+                            (e.description ? '<p>' + e.description + '</p>' : '') +
+                            (e.contact ? '<p class="labeled"><b>Ansprechpartner:</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
+                            (e.event ? '<p class="labeled"><b>Entstanden:</b> ' + e.event + '</p>' : '') +
+                            (e.date ? '<p class="labeled"><b>Wann:</b> ' + e.date + '</p>' : '') +
+                            (e.category ? '<p class="labeled"><b>Kategorie:</b> ' + e.category + '</p>' : '') +
+                            (e.link ? '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>' : '') +
                             '<button>Schließen</button>';
                     overlay
                         .attr("style", "display: block")
