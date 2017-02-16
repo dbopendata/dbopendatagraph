@@ -171,7 +171,7 @@ requirejs(['d3'], function(d3) {
             }
 
             function showInfo(e) {
-                e.stopImmediatePropagation();
+                d3.event.stopImmediatePropagation();
                 var content = '<h2>' + e.title + '</h2>' +
                         (e.description ? '<p>' + e.description + '</p>' : '') +
                         (e.contact ? '<p class="labeled"><b>Ansprechpartner:</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
