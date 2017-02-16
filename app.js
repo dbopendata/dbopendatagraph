@@ -8,7 +8,7 @@
 requirejs.config({
     baseUrl: '.',
     paths: {
-        'd3': 'https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min'
+        'd3': 'https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3'
     }
 });
 
@@ -59,7 +59,7 @@ requirejs(['d3'], function(d3) {
 
             sources.forEach(function (d) {
                 d.id = sourceIds[d.title] = data.nodes.length + 1;
-                d.class = 'source node';
+                d.class = 'source';
                 d.connections = 0;
                 d.category = categoryMapping[d.type];
                 data.nodes.push(d);
@@ -81,7 +81,7 @@ requirejs(['d3'], function(d3) {
                         data.nodes[sourceIds[s] - 1].connections++;
                     });
                     data.nodes[d.id - 1].connections = d.sources.length;
-                    data.nodes[d.id - 1].class = 'project node';
+                    data.nodes[d.id - 1].class = 'project';
                 }
             });
 
@@ -109,13 +109,13 @@ requirejs(['d3'], function(d3) {
                 .data(data.nodes)
                 .enter().append('g')
                 .attr('class', function (d) {
-                    return d.class;
+                    return d.class + ' node';
                 })
                 .call(d3.drag()
                     .on('start', beginDrag)
                     .on('drag', drag)
                     .on('end', endDrag)
-            );
+                );
 
             svg.selectAll('.source')
                 .append('circle')
@@ -124,35 +124,22 @@ requirejs(['d3'], function(d3) {
                 })
                 .attr('fill', function (d) {
                     return colors(d.type);
-                });
+                })
+                .on('click', showInfo);
 
             var overlay = d3.select('#overlay')
                 .on('click', function () {
                     overlay.attr('style', null);
                 });
 
-            svg.selectAll('.node')
-                .on('click', function (e) {
-                    var content = '<h2>' + e.title + '</h2>' +
-                            (e.description ? '<p>' + e.description + '</p>' : '') +
-                            (e.contact ? '<p class="labeled"><b>Ansprechpartner:</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
-                            (e.event ? '<p class="labeled"><b>Entstanden:</b> ' + e.event + '</p>' : '') +
-                            (e.date ? '<p class="labeled"><b>Wann:</b> ' + e.date + '</p>' : '') +
-                            (e.category ? '<p class="labeled"><b>Kategorie:</b> ' + e.category + '</p>' : '') +
-                            (e.link ? '<p><a target="_blank" href="' + e.link + '">' + e.link + '</a></p>' : '') +
-                            '<button>Schließen</button>';
-                    overlay
-                        .attr("style", "display: block")
-                        .select('div').html(content)
-                });
-
-            if (document.implementation.hasFeature("www.http://w3.org/TR/SVG11/feature#Extensibility","1.1")) {
+            if (document.implementation.hasFeature("www.http://w3.org/TR/SVG11/feature#Extensibility", "1.1")) {
                 node.append('foreignObject')
                     .attr("x", -50)
                     .attr("y", -10)
                     .attr("width", 100)
                     .attr("height", 50)
                     .append('xhtml:body')
+                    .on('click', showInfo)
                     .append('div')
                     .attr("style", function (d) {
                         if (d.class === 'project') {
@@ -174,12 +161,30 @@ requirejs(['d3'], function(d3) {
                     })
                     .attr('stroke', function (d) {
                         return d.class === 'project' ? colors(d.type) : 'transparent';
-                    });
+                    })
+                    .on('click', showInfo);
 
                 node.append('text')
                     .text(function (d) {
                         return d.title;
                     });
+            }
+
+            function showInfo(e) {
+                e.stopImmediatePropagation();
+                var content = '<h2>' + e.title + '</h2>' +
+                        (e.description ? '<p>' + e.description + '</p>' : '') +
+                        (e.contact ? '<p class="labeled"><b>Ansprechpartner:</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
+                        (e.event ? '<p class="labeled"><b>Entstanden:</b> ' + e.event + '</p>' : '') +
+                        (e.date ? '<p class="labeled"><b>Wann:</b> ' + e.date + '</p>' : '') +
+                        (e.category ? '<p class="labeled"><b>Kategorie:</b> ' + e.category + '</p>' : '')
+                if (e.link) {
+                    content += '<p>' + e.link.replace(/(https?:\/\/[^\s]+)/gi, '<a href="$1">$1</a>') + '</p>';
+                }
+                content += '<button>Schließen</button>';
+                overlay
+                    .attr("style", "display: block")
+                    .select('div').html(content)
             }
 
             function tick() {
