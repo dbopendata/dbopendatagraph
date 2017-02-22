@@ -179,7 +179,7 @@ requirejs(['d3'], function(d3) {
                         (e.date ? '<p class="labeled"><b>Wann:</b> ' + e.date + '</p>' : '') +
                         (e.category ? '<p class="labeled"><b>Kategorie:</b> ' + e.category + '</p>' : '')
                 if (e.link) {
-                    content += '<p>' + e.link.replace(/(https?:\/\/[^\s]+)/gi, '<a href="$1">$1</a>') + '</p>';
+                    content += '<p>' + e.link.replace(/(https?:\/\/[^\s]+)/gi, '<a href="$1" target="_blank">$1</a>') + '</p>';
                 }
                 content += '<button>Schließen</button>';
                 overlay
