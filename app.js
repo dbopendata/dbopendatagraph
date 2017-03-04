@@ -19,14 +19,31 @@ requirejs(['d3'], function(d3) {
     var zoom = d3.zoom()
         .scaleExtent([0.1, 4]);
 
-    var svg = d3.select('body').append('svg:svg')
+    var body = d3.select('body');
+
+    var svg = body.append('svg:svg')
         .attr('width', width)
         .attr('height', height)
+        .attr('class', 'if-diagram')
         .call(zoom.on('zoom', function () {
             view.attr('transform', d3.event.transform);
         }));
 
     var view = svg.append('g');
+
+    var showList = body.append('button')
+        .attr('id', 'showList');
+
+    showList.append('span').attr('class', 'if-diagram').text('Liste anzeigen');
+    showList.append('span').attr('class', 'if-list').text('Diagramm anzeigen');
+
+    var list = body.append('div')
+        .attr('id', 'list')
+        .attr('class', 'if-list')
+        .append('div');
+
+    var displayMode = 'diagram';
+    var currentActive;
 
     var colors = d3.scaleOrdinal([
         '#f01414',
@@ -63,6 +80,19 @@ requirejs(['d3'], function(d3) {
                 d.connections = 0;
                 d.category = categoryMapping[d.type];
                 data.nodes.push(d);
+
+                list.append('div')
+                    .text(d.title)
+                    .on('click', function () {
+                        var d = d3.event.target;
+                        if (currentActive) {
+                            currentActive.setAttribute('class', null);
+                        }
+                        currentActive = d;
+                        d.setAttribute('class', 'active');
+                    })
+                    .append('div')
+                    .html(getInfo(d));
             });
 
             data.links = [];
@@ -132,6 +162,11 @@ requirejs(['d3'], function(d3) {
                     overlay.attr('style', null);
                 });
 
+            showList.on('click', function () {
+                displayMode = displayMode === 'diagram' ? 'list' : 'diagram';
+                body.attr('class', 'is-' + displayMode);
+            });
+
             if (document.implementation.hasFeature("www.http://w3.org/TR/SVG11/feature#Extensibility", "1.1")) {
                 node.append('foreignObject')
                     .attr("x", -50)
@@ -170,18 +205,21 @@ requirejs(['d3'], function(d3) {
                     });
             }
 
-            function showInfo(e) {
-                d3.event.stopImmediatePropagation();
-                var content = '<h2>' + e.title + '</h2>' +
-                        (e.description ? '<p>' + e.description + '</p>' : '') +
-                        (e.contact ? '<p class="labeled"><b>Ansprechpartner:</b> ' + e.contact.replace('\n', ', ') + '</p>' : '') +
-                        (e.event ? '<p class="labeled"><b>Entstanden:</b> ' + e.event + '</p>' : '') +
-                        (e.date ? '<p class="labeled"><b>Wann:</b> ' + e.date + '</p>' : '') +
-                        (e.category ? '<p class="labeled"><b>Kategorie:</b> ' + e.category + '</p>' : '')
-                if (e.link) {
-                    content += '<p>' + e.link.replace(/(https?:\/\/[^\s]+)/gi, '<a href="$1" target="_blank">$1</a>') + '</p>';
+            function getInfo(d) {
+                var content = (d.description ? '<p>' + d.description + '</p>' : '') +
+                (d.contact ? '<p class="labeled"><b>Ansprechpartner:</b> ' + d.contact.replace('\n', ', ') + '</p>' : '') +
+                (d.event ? '<p class="labeled"><b>Entstanden:</b> ' + d.event + '</p>' : '') +
+                (d.date ? '<p class="labeled"><b>Wann:</b> ' + d.date + '</p>' : '') +
+                (d.category ? '<p class="labeled"><b>Kategorie:</b> ' + d.category + '</p>' : '');
+                if (d.link) {
+                    content += '<p>' + d.link.replace(/(https?:\/\/[^\s]+)/gi, '<a href="$1" target="_blank">$1</a>') + '</p>';
                 }
-                content += '<button>Schließen</button>';
+                return content;
+            }
+
+            function showInfo(d) {
+                d3.event.stopImmediatePropagation();
+                var content = '<h2>' + d.title + '</h2>' + getInfo(d) + '<button>Schließen</button>';
                 overlay
                     .attr("style", "display: block")
                     .select('div').html(content)
