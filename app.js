@@ -111,8 +111,8 @@ requirejs(['d3'], function(d3) {
                         data.nodes[sourceIds[s] - 1].connections++;
                     });
                     data.nodes[d.id - 1].connections = d.sources.length;
-                    data.nodes[d.id - 1].class = 'project';
                 }
+                data.nodes[d.id - 1].class = data.nodes[d.id - 1].class || 'project';
             });
 
             simulation
