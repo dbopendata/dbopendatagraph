@@ -71,7 +71,7 @@ requirejs(['d3'], function(d3) {
     var sourceIds = {};
 
     d3.json('data/sources.json', function (error, sources) {
-        d3.json('data/projects.json', function(error, data) {
+        d3.json('https://dilab.co/dbopendata', function(error, data) {
             if (error) throw error;
 
             sources.forEach(function (d) {
