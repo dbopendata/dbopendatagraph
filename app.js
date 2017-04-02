@@ -72,7 +72,7 @@ requirejs(['d3'], function(d3) {
 
     var sourceIds = {};
 
-    var url = location.protocol === 'file:' ? 'http://localhost:3001/' : 'http://dbs.dilab.co/dbopendata';
+    var url = location.protocol === 'file:' ? 'http://localhost:3001/' : 'https://dbs.dilab.co/dbopendata';
 
     d3.json(url, function(error, data) {
         if (error) throw error;
