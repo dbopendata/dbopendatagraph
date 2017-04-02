@@ -66,11 +66,15 @@ requirejs(['d3'], function(d3) {
     var simulation = d3.forceSimulation()
         .force('link', d3.forceLink().id(function(d) { return d.id; }))
         .force('charge', d3.forceManyBody().strength(-200))
-        .force('center', d3.forceCenter(width / 2, height / 2));
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('x_force', d3.forceX(96).strength(0.01))
+        .force('y_force', d3.forceY(60).strength(0.01));
 
     var sourceIds = {};
 
-    d3.json('https://dilab.co/dbopendata', function(error, data) {
+    var url = location.protocol === 'file:' ? 'http://localhost:3001/' : 'http://dbs.dilab.co/dbopendata';
+
+    d3.json(url, function(error, data) {
         if (error) throw error;
 
         data.sources.forEach(function (d) {
