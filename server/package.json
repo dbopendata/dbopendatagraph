@@ -1,0 +1,17 @@
+{
+  "name": "dbopendata-backend",
+  "version": "0.0.1",
+  "description": "Backend to visualize data from @DBOpenData",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joachim Schirrmacher <joachim.schirrmacher@deutschebahn.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-winston": "^2.3.0",
+    "googleapis": "^18.0.0",
+    "winston": "^2.3.1"
+  }
+}
