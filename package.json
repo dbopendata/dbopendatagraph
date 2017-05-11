@@ -9,5 +9,6 @@
   "author": "Joachim Schirrmacher <joachim.schirrmacher@deutschebahn.com>",
   "license": "MIT",
   "dependencies": {
-  }
+  },
+  "repository": "https://github.com/dbopendata/dbopendatagraph"
 }

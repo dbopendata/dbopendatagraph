@@ -32,10 +32,12 @@ requirejs(['d3'], function(d3) {
     var view = svg.append('g');
 
     var showList = body.append('button')
-        .attr('id', 'showList');
+        .attr('id', 'showList')
+        .on('click', function () {
+            window.open('https://zeroonedata.shinyapps.io/hackathon_projects/')
+        });
 
-    showList.append('span').attr('class', 'if-diagram').text('Liste anzeigen');
-    showList.append('span').attr('class', 'if-list').text('Diagramm anzeigen');
+    showList.append('span').text('Liste anzeigen');
 
     var list = body.append('div')
         .attr('id', 'list')
@@ -163,11 +165,6 @@ requirejs(['d3'], function(d3) {
             .on('click', function () {
                 overlay.attr('style', null);
             });
-
-        showList.on('click', function () {
-            displayMode = displayMode === 'diagram' ? 'list' : 'diagram';
-            body.attr('class', 'is-' + displayMode);
-        });
 
         if (document.implementation.hasFeature("www.http://w3.org/TR/SVG11/feature#Extensibility", "1.1")) {
             node.append('foreignObject')
